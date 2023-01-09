@@ -1,5 +1,5 @@
 pipeline{
-
+    
     agent any
 
     stages {
@@ -7,9 +7,6 @@ pipeline{
         stage('Git Checkout'){
 
             steps{
-
-                script{
-
                     git branch: 'main', url: 'https://github.com/khalidbaddi/mvn.repo.git'
                 }
             }
